@@ -1,5 +1,5 @@
 # Nestjs Ottoman
-![GitHub](https://img.shields.io/github/license/Andromeda606/nestjs-ottoman)
+![GitHub](https://img.shields.io/github/license/Andromeda606/nest-ottoman)
 
 > Ottoman module for Nestjs 
 
@@ -11,24 +11,24 @@
 
 ### Yarn
 ```bash
-yarn add nestjs-ottoman ottoman
+yarn add nest-ottoman ottoman
 ```
 
 ### NPM
 ```bash
-npm install nestjs-ottoman ottoman --save
+npm install nest-ottoman ottoman --save
 ```
 
 ### PNPM
 ```bash
-pnpm add nestjs-ottoman ottoman
+pnpm add nest-ottoman ottoman
 ```
 
 ## Usage
 ### Module Registration
 ```typescript
 import { Module } from '@nestjs/common';
-import { OttomanModule } from 'nestjs-ottoman';
+import { OttomanModule } from 'nest-ottoman';
 
 @Module({
   imports: [
@@ -44,7 +44,7 @@ export class AppModule {}
 Async registration is also available:
 ```typescript
 import { Module } from '@nestjs/common';
-import { OttomanModule } from 'nestjs-ottoman';
+import { OttomanModule } from 'nest-ottoman';
 
 @Module({
   imports: [
@@ -62,7 +62,7 @@ export class AppModule {}
 ### Model Registration
 ``@Property`` decorator is ottoman property decorator. More information about decorators can be found [here](https://ottomanjs.com/docs/basic/schema.html)
 ```typescript
-import { Model, Property } from '../ottoman/ottoman.decorator';
+import { Model, Property } from 'nest-ottoman';
 
 @Model('_default')
 export class DefaultModel {
@@ -77,9 +77,8 @@ export class DefaultModel {
 ### Service Registration
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { InjectModel } from './ottoman/ottoman.decorator';
 import { DefaultModel } from './collections/foo.collection';
-import { Model } from './ottoman/ottoman.types';
+import { Model, InjectModel } from 'nest-ottoman';
 
 @Injectable()
 export class AppService {
@@ -112,4 +111,4 @@ export class AppService {
 
 
 ## Example Application
-Example application can be found [here](https://github.com/Andromeda606/nestjs-ottoman/tree/master/example)
+Example application can be found [here](https://github.com/Andromeda606/nest-ottoman/tree/master/example)
