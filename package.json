@@ -1,6 +1,6 @@
 {
   "name": "nestjs-ottoman",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Ottoman module for Nestjs ",
   "author": "Ramazan <ramazan@androsoft.net>",
   "private": true,
