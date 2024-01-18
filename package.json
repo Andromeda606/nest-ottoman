@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-ottoman",
+  "name": "nest-ottoman",
   "version": "1.0.0",
   "description": "Ottoman module for Nestjs ",
   "author": "Ramazan <ramazan@androsoft.net>",
@@ -18,7 +18,9 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "release": "release-it"
+    "release": "release-it",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public"
   },
   "dependencies": {
     "@nestjs/common": "9.0.5",
