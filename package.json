@@ -54,5 +54,6 @@
     "typescript": "^4.7.4"
   },
   "main": "index.js",
+  "npm": true,
   "repository": "https://github.com/Andromeda606/nestjs-ottoman"
 }
