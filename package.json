@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Ottoman module for Nestjs ",
   "author": "Ramazan <ramazan@androsoft.net>",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "scripts": {
     "build": "nest build",
