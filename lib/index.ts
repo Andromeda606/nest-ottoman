@@ -7,3 +7,4 @@ export {
   ClassModel,
   OttomanModuleAsyncFactoryOptions,
 } from './interfaces';
+export { ModelClass } from './ottoman.types';
