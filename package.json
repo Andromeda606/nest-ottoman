@@ -4,10 +4,12 @@
   "description": "Ottoman module for Nestjs ",
   "author": "Ramazan <ramazan@androsoft.net>",
   "private": false,
+  "npm": true,
+  "repository": "https://github.com/Andromeda606/nest-ottoman",
   "license": "MIT",
   "scripts": {
     "build": "nest build",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format": "prettier --write \\\"lib/**/*.ts\\\" \\\"test/**/*.ts\\\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
@@ -18,9 +20,8 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "release": "release-it",
-    "prepublish:npm": "npm run build",
-    "publish:npm": "npm publish --access public"
+    "release": "yarn prepublish:npm && release-it",
+    "prepublish:npm": "npm run build"
   },
   "dependencies": {
     "@nestjs/common": "9.0.5",
@@ -55,7 +56,5 @@
     "tsconfig-paths": "4.2.0",
     "typescript": "^4.7.4"
   },
-  "main": "index.js",
-  "npm": true,
-  "repository": "https://github.com/Andromeda606/nestjs-ottoman"
+  "main": "index.js"
 }

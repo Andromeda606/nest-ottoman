@@ -10,7 +10,7 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "rootDir": "./src",
+    "rootDir": "./lib",
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,

@@ -1,4 +1,4 @@
-import { ClassModel } from './ottoman.types';
+import { ClassModel } from './interfaces';
 
 class TypesStorageHost {
   private models: Array<{

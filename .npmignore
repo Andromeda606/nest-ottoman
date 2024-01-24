@@ -1,0 +1,12 @@
+lib
+.eslintrc.js
+.gitignore
+.prettierrc
+.release-it.json
+nest-cli.json
+README.md
+tsconfig.build.json
+tsconfig.json
+yarn-error.log
+yarn.lock
+.idea

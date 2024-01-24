@@ -94,10 +94,10 @@ export class AppService {
 ```
 
 ## Decorators
-| Decorator                    | Description                         |
-|------------------------------|-------------------------------------|
-| `@Model(bucketName: string)` | Decorator for model registration    |
-| `@Property()`                | Decorator for property registration |
+| Decorator                         | Description                         |
+|-----------------------------------|-------------------------------------|
+| `@ModelClass(bucketName: string)` | Decorator for model registration    |
+| `@Property()`                     | Decorator for property registration |
 
 ## Nest Ottoman Module Options
 | Option                                            | Description                  |
